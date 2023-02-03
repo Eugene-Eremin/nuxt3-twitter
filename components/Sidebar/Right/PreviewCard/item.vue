@@ -5,6 +5,7 @@
 </template>
 
 <script setup>
-const wrapperClasses = computed(() => 'transition ease-in-out duration-500 border-white-200 dark:border-gray-700'
-)
+const { defaultTransition, twitterBorderColor } = useTailwindConfig()
+
+const wrapperClasses = computed(() => `${defaultTransition} ${twitterBorderColor}`)
 </script>

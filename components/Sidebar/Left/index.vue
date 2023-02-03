@@ -1,7 +1,8 @@
 <template>
     <div class="flex flex-col h-screen">
         <div
-            class="p-2 my-2 transition ease-in-out duration-500 dark:hover:bg-white/20 hover:bg-blue-50 rounded-full w-min">
+            :class="defaultTransition"
+            class="p-2 my-2 dark:hover:bg-white/20 hover:bg-blue-50 rounded-full w-min">
             <NuxtLink to="/">
                 <div class="w-8 h-8">
                     <LogoTwitter />
@@ -112,5 +113,6 @@
 </template>
 
 <script setup>
+const { defaultTransition } = useTailwindConfig()
 
 </script>
